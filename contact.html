@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Contact Page</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+	max-width: 1170px;
+  margin: auto auto;
+  padding: 0;  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("pictures/slider1.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  height:100%;
+  padding: 20px;
+ 
+}
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+<div class="bg-image"></div>
+<div class="bg-text">
+<div class="w3-container"  id='cssmenu' style="width:100%; " >
+   <h2 style="color:RED; font-size:30px; font-family: cursive; ">Organ Donation System</h2>
+<ul>
+   <li class="active"><a href='home.jsp'>HOME</a></li>
+   <li><a href='donor.html'>DONOR</a></li>
+   <li><a href='accepterLogin.html'>ACCEPTOR</a></li>
+   <li><a href='contact.html'>CONTACT US</a></li>
+</ul>
+ <br>
+</div>
+
+<div class="w3-content w3-section" class="div2" style="max-width:500px; align:center;">
+  <img class="mySlides w3-animate-left" src="pictures\homebg.jpg" style="width:100%; height:450px">
+  <img class="mySlides w3-animate-right" src="pictures\slider2.jpg" style="width:100%; height:450px" >
+  <img class="mySlides w3-animate-top" src="pictures\homeBg1.jpg" style="width:100%; height:450px">
+   <img class="mySlides w3-animate-top" src="pictures\bgimage.jpg" style="width:100%; height:450px">
+</div>
+<br><br><br><br>
+<div class="container" align="left">
+
+<section>
+  <div style="padding-left: 20%">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div>
+              <h2>CONTACT US</h2>
+            </div>
+            <form action="ContactUsServlet" method="post" data-form-title="CONTACT US">
+            <br>
+              <input type="hidden" data-form-email="true">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" required="" placeholder=" Name" data-form-field="Name" style="width: 320px; height:25px;">
+              </div><br>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" required="" placeholder=" Email" data-form-field="Email" style="width: 320px; height:25px;">
+              </div><br>
+              <div class="form-group">
+                <input type="tel" class="form-control" name="mobile" placeholder=" Phone" data-form-field="Phone" style="width: 320px; height:25px;">
+              </div><br>
+              <div class="form-group">
+                <textarea class="form-control" name="message" placeholder=" Message" rows="7" cols="50" data-form-field="Message" ></textarea>
+              </div><br>
+              <div>
+                <button type="submit" class="btn btn-lg btn-danger">CONTACT US</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</div>
+
+</div>
+</body>
+</html>

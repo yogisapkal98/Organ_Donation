@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="accepterRegister.css">
+<meta charset="ISO-8859-1">
+<title>Acceptor Registration</title>
+
+</head>
+<body >
+<div class="bg-image"></div>
+<div class="bg-text">
+<div class="w3-container"  id='cssmenu' style="width:100%; " >
+  <h2 style="color:RED;font-size:30px; font-family: cursive; ">Organ Donation System</h2>
+<ul>
+   <li class="active"><a href='home.jsp'>HOME</a></li>
+  <li><a href='donor.html'>DONOR</a></li>
+   <li><a href='accepterLogin.html'>ACCEPTOR</a></li>
+   <li><a href='contact.html'>CONTACT US</a></li>
+</ul>
+ 
+</div>
+
+<div class="container" align="center">
+<form action="AccepterRegisterServlet" method="post" >
+<label style="color:blue; font-size:30px; font-style: oblique;">ACCEPTER SIGNUP</label><br><br>
+
+<table cellpadding="10px" cellspacing="20px">
+<tr>
+<td>UserName </td>
+<td><input type="text"  name="username" required="required" placeholder="   Enter username" style="width:150%;height:25px;"	></td>
+</tr>
+<tr>
+<td>Password </td>
+<td><input type="password" name="password" required="required" placeholder="  Enter Password" style="width:150%;height:25px;"></td>
+</tr>
+<tr>
+<td>Mobile No </td>
+<td> <input type="text" name="mobile" required="required" maxlength="10" placeholder="  Enter mobile number" style="width:150%;height:25px;"></td>
+</tr>
+<tr>
+<td>Email Id </td>
+<td> <input type="email" name="email" required="required" placeholder="  Enter email" style="width:150%;height:25px;"></td>
+</tr>
+<tr>
+<td>Location </td>
+<td> <input type="text" name="location" required="required" placeholder="  Enter Location" style="width:150%;height:25px;"></td>
+</tr>
+<tr>
+<td>Country </td>
+<td> <input type="text" name="country" required="required" placeholder="  Enter Country" style="width:150%;height:25px;"></td>
+</tr>
+
+</table><br>
+<input type="submit" value="Register" style="width: 80px; height: 30px; background-color: lime;">
+</form>
+</div>
+</div>
+</body>
+</html>

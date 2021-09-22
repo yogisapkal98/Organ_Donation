@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Donate Form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="sendMail.css">
+<meta charset="ISO-8859-1">
+<title>Send Email</title>
+
+</head>
+<body>
+<div class="bg-image"></div>
+<div class="bg-text">
+<div class="w3-container"  id='cssmenu' style="width:100%; " >
+   <h2 style="color:RED; font-size:30px;">Organ Donation System</h2>
+<ul>
+   <li class="active"><a href='home.jsp'>HOME</a></li>
+   <li><a href='donor.html'>DONOR</a></li>
+   <li><a href='accepterLogin.html'>ACCEPTOR</a></li>
+   <li><a href='contact.html'>CONTACT US</a></li>
+</ul>
+ <br>
+</div>
+
+
+<div class="container" align="center">
+<form action="SendRequestServlet" method="post">
+  To : <input type="text" name="to"  /><br><br>
+  Subject : <input type="text" name="subject"  /><br><br>
+  Message : <textarea  rows="10" cols="50" name="msg"  ></textarea><br><br>
+  Your Email id : <input type="text" name="user" ><br><br>
+  Password : <input type="password" name="pass"   /><br><br>
+  <input type="submit" value="send" class="btn" style="width:110px;height:50px; background-color: green; text-align: center;" />
+  
+</form>
+</div>
+</div>
+</body>
+</html>
